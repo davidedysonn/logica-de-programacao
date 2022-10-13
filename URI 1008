@@ -1,17 +1,19 @@
 using System;
 class HelloWorld {
   static void Main() {
+  
+    //a beecrowd só aceita variaveis especificas para validacoo de seus testes e resolucoes.
     
-    int num, horasTrabalhadas;
-    double valorHora, salario;
+    int NUMBER, horasTrabalhadas;
+    double valorHora, SALARY;
     
-    num = int.Parse(Console.ReadLine());
+    NUMBER = int.Parse(Console.ReadLine());
     horasTrabalhadas = int.Parse(Console.ReadLine());
     valorHora=double.Parse(Console.ReadLine());
-    salario = (double)horasTrabalhadas * valorHora;
+    SALARY = (double)horasTrabalhadas * valorHora;
     
-    Console.WriteLine("NUMBER = "+num);
-    Console.WriteLine("SALARY = U$ "+salario.ToString("F2"));
+    Console.WriteLine("NUMBER = "+NUMBER);
+    Console.WriteLine("SALARY = U$ "+SALARY.ToString("F2"));
     
     
   }

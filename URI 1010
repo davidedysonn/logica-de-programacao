@@ -1,0 +1,23 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    double valorPagar;
+    //
+    string [] produto1 = Console.ReadLine().Split(' ');
+    int codPeca1 = int.Parse(produto1[0]);
+    int peca1 = int.Parse(produto1[1]);
+    double valorPeca1 = double.Parse(produto1[2]);
+    //
+    string [] produto2 = Console.ReadLine().Split (' ');
+    int codPeca2 = int.Parse(produto2[0]);
+    int peca2 = int.Parse(produto2[1]);
+    double valorPeca2 = double.Parse(produto2[2]);
+    //
+    valorPagar=((peca1*valorPeca1)+(peca2*valorPeca2));
+    
+    Console.WriteLine("VALOR A PAGAR: R$ "+valorPagar.ToString("F2"));
+    
+    
+  }
+}

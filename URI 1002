@@ -1,0 +1,19 @@
+//Atividade referente ao link:
+//https://www.beecrowd.com.br/judge/pt/problems/view/1002
+
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    double area, n, raio, calc1, y;
+    
+    y = 2.0;
+    n= 3.14159;
+    raio = double.Parse(Console.ReadLine());
+    calc1 = Math.Pow(raio,y);
+    area = n*teste1;
+    
+    Console.WriteLine("A="+area.ToString("F4"));
+    
+  }
+}

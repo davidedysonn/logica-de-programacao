@@ -1,0 +1,18 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int num, horasTrabalhadas;
+    double valorHora, salario;
+    
+    num = int.Parse(Console.ReadLine());
+    horasTrabalhadas = int.Parse(Console.ReadLine());
+    valorHora=double.Parse(Console.ReadLine());
+    salario = (double)horasTrabalhadas * valorHora;
+    
+    Console.WriteLine("NUMBER = "+num);
+    Console.WriteLine("SALARY = U$ "+salario.ToString("F2"));
+    
+    
+  }
+}

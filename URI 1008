@@ -16,5 +16,6 @@ class HelloWorld {
     Console.WriteLine("SALARY = U$ "+SALARY.ToString("F2"));
     
     
+    
   }
 }

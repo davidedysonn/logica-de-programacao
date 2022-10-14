@@ -1,0 +1,15 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int distancia;
+    double valorCombustivel, km;
+    
+    distancia=int.Parse(Console.ReadLine());
+    valorCombustivel = double.Parse(Console.ReadLine());
+    km=(double)distancia/valorCombustivel;
+    
+    Console.WriteLine(km.ToString("F3")+" km/l");
+
+    }
+}

@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    double A = double.Parse(Console.ReadLine());
+    double B = double.Parse(Console.ReadLine());
+    double C = double.Parse(Console.ReadLine());
+    
+    double calc1 = ((A*2.0)+(B*3.0)+(C*5.0))/10.0;
+    
+    Console.WriteLine("MEDIA = "+calc1.ToString("F1"));
+    
+  }
+}

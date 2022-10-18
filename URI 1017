@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int tempo = int.Parse(Console.ReadLine());
+    int velocidade = int.Parse(Console.ReadLine());
+    double calc1 = (double)tempo * velocidade / 12;
+    //não se precisa de precencia em (destaque) pois a leitura
+    //do sistema é realizada da esquerda pra direita.
+    Console.WriteLine(calc1.ToString("F3"));
+    
+    
+  }
+}

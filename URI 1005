@@ -1,0 +1,12 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    double a= double.Parse(Console.ReadLine());
+    double b= double.Parse(Console.ReadLine());
+    double calc1= ((a*3.5)+(b*7.5))/11.0;
+    
+    Console.WriteLine(calc1.ToString("F5"));
+    
+  }
+}

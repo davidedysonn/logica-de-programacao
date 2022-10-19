@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int raio = int.Parse(Console.ReadLine());
+    double calc0 = (4.0/3.0)*3.14159;
+    double calc1 = Math.Pow(raio,3);
+    double calc2 = calc0 * calc1;
+    
+    Console.WriteLine("VOLUME = "+calc2.ToString("F3"));
+    
+    
+  }
+}

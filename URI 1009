@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    string nome = Console.ReadLine();
+    double salario = double.Parse(Console.ReadLine());
+    double vendas = double.Parse(Console.ReadLine());
+    
+    double calc1 = salario + (vendas*0.15);
+    
+    Console.WriteLine("TOTAL = R$ "+calc1.ToString("F2"));
+    
+  }
+}

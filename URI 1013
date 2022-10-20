@@ -1,0 +1,18 @@
+using System;
+class HelloWorld {
+  static void Main() {
+     
+    string [] absoluto=Console.ReadLine().Split(' ');
+    int A = int.Parse(absoluto[0]);
+    int B = int.Parse(absoluto[1]);
+    int C = int.Parse(absoluto[2]);
+    
+    int calc1 = (A+B+Math.Abs(A-B))/2;
+    
+    int calc2 = (calc1+C+Math.Abs(calc1-C))/2;
+    
+    Console.WriteLine(calc2+" eh o maior");
+    
+    
+  }
+}

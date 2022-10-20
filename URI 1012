@@ -1,0 +1,30 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+      string [] letras = Console.ReadLine().Split(' ');
+      double A=double.Parse(letras[0]);
+      double B=double.Parse(letras[1]);
+      double C=double.Parse(letras[2]);
+      
+      //a) a área do triângulo retângulo que tem A por base e C por altura.
+      double calcA= (A * C) /2.0;
+      //b) a área do círculo de raio C. (pi = 3.14159)
+      double calcB= 3.14159*(Math.Pow(C,2));
+      //c) a área do trapézio que tem A e B por bases e C por altura.
+      double calcC= (A+B) * C / 2; //note a ordem de precedencia da esquerda pra direita.
+      //d) a área do quadrado que tem lado B.
+      double calcD= Math.Pow(B,2);
+      //e) a área do retângulo que tem lados A e B.
+      double calcE= A*B;
+    
+    
+    
+    Console.WriteLine("TRIANGULO: " + calcA.ToString("F3"));
+    Console.WriteLine("CIRCULO: "+ calcB.ToString("F3"));
+    Console.WriteLine("TRAPEZIO: "+ calcC.ToString("F3"));
+    Console.WriteLine("QUADRADO: "+ calcD.ToString("F3"));
+    Console.WriteLine("RETANGULO: "+ calcE.ToString("F3"));
+    
+  }
+}

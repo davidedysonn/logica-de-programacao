@@ -1,0 +1,32 @@
+using System;
+class HelloWorld {
+  static void Main() {
+     
+    string [] distanciaX1Y1 = Console.ReadLine().Split(' ');
+    double X1=double.Parse(distanciaX1Y1[0]);
+    double Y1=double.Parse(distanciaX1Y1[1]);
+    
+    string [] distanciaX2Y2 = Console.ReadLine().Split(' ');
+    double X2=double.Parse(distanciaX2Y2[0]);
+    double Y2=double.Parse(distanciaX2Y2[1]);
+    
+    /*
+    forma de fazer mais demorada porem detalhada.
+    double calcX1Y1_1= X1-Y1;
+    double calcX1Y1_2=Math.Pow(calcX1Y1_1,2);
+    
+    double calcX2Y2_1=X2-Y2;
+    double calcX2Y2_2=Math.Pow(calcX2Y2_1,2);
+    */
+    
+    //calculo com a elevação
+    double calcX1Y1_2=Math.Pow(X2-X1,2);
+    double calcX2Y2_2=Math.Pow(Y2-Y1,2);
+    
+    double result= Math.Sqrt(calcX1Y1_2+calcX2Y2_2);
+    
+    Console.WriteLine(result.ToString("F4"));
+    
+    
+  }
+}
